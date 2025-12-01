@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int Number, Reminder, Sum = 0;
+    printf("Please enter any 3 digit number: ");
+    scanf("%d", &Number);
+
+    while (Number > 0) {
+        Reminder = Number % 10;
+        Sum += Reminder;
+        Number /= 10;
+    }
+
+    printf("Sum of the digits of the given number is = %d", Sum);
+    return 0;
+}

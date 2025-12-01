@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    char op;
+    int a, b, res;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &op);
+
+    printf("Enter first operand: a=");
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    switch (op) {
+        case '+':
+            res = a + b;
+            printf("\nAddition of %d and %d is: %d", a, b, res);
+            break;
+        case '-':
+            res = a - b;
+            printf("\nSubtraction of %d and %d is: %d", a, b, res);
+            break;
+        case '*':
+            res = a * b;
+            printf("\nMultiplication of %d and %d is: %d", a, b, res);
+            break;
+        case '/':
+            res = a / b;
+            printf("\nDivision of %d and %d is: %d", a, b, res);
+            break;
+        default:
+            printf("Error! Incorrect Operator Value\n");
+    }
+
+    return 0;
+}

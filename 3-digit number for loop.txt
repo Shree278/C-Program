@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int number, sum = 0, reminder;
+    printf("Please enter any 3 digit number: ");
+    scanf("%d", &number);
+
+    for (; number != 0; number /= 10) {
+        reminder = number % 10;
+        sum += reminder;
+    }
+
+    printf("Sum of digits of the number is %d", sum);
+    return 0;
+}
